@@ -1,3 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>hello world!</h1>
-
+<div class="inventory-app">
+  <app-products-list [productList]="products"
+                     (productSelected)="productWasSelected($event)">
+  </app-products-list>
+</div>
