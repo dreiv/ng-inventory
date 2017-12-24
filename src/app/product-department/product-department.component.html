@@ -1,6 +1,6 @@
 <div class="product-department">
   <span *ngFor="let name of department; let i=index">
     <a href="#">{{ name }}</a>
-    <span>{{ i < (department.length-1) ? '>' : '' }}</span>
+    <span *ngIf="i < (department.length-1)">></span>
   </span>
 </div>
